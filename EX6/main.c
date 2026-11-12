@@ -62,8 +62,10 @@ int main()
     emp[2].salary = 90000.0;
     strcpy(emp[2].name, "swift");
     
-    employee_t my_emp;
+    employee_t my_emp[3];
     emp_info(emp[0]);
     emp_info(emp[1]);
     emp_info(emp[2]);
+    emp_writefile(emp, 3);
+    emp_readfile(my_emp, 3);
 }
